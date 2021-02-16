@@ -1,0 +1,69 @@
+footer{
+	background-color: #f4f4f4;
+	padding-right: 100px;
+	padding-left: 100px;
+	margin-bottom: -15px;
+	margin-top: -15px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 200px;
+}
+
+.rights {
+	text-align: center;
+	font-size: 14px; 
+	color: #bebebe;
+	padding-bottom: 20px;
+}
+
+.play_store {
+	max-width: 150px;
+	margin-top: 15px;
+}
+
+.social {
+	margin-top: 15px;
+}
+
+.main {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.facebook {
+	text-align: left;
+	padding-right: 20px;
+}
+
+.instagram {
+	text-align: center;
+	padding-right: 20px;
+}
+
+.twitter {
+	text-align: right;
+}
+
+.footer-grid {
+	margin-top: 15px;
+}
+
+p {
+	cursor: pointer;
+}
+
+img {
+	cursor: pointer;	
+}
+
+select {
+	border: none;
+	margin-top: 15px;
+	height: 40px;
+	width: 150px;
+	background-color: white;
+	border-radius: 5px;
+}

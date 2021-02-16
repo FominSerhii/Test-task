@@ -1,0 +1,41 @@
+<div class="header">
+	<div class="burger">
+		<nav class='navbar navbar-expand-lg navbar-light bg-light'>
+			<ul class='nav navbar-brand-left'>
+	      <a routerLink="/">auto.market</a>
+	    </ul>
+	    <label class="burger__btn" (click)="burgerMenu()">
+	      <img src="assets/icon/border-width.svg">
+	    </label>
+	  </nav>
+  </div>
+</div>
+
+
+<div class="nav-wrapper" [class.burger--open]="isOpen === true">
+	<nav class='navbar navbar-expand-lg navbar-light bg-light'>
+	  <div class="container-fluid">
+	    <ul class='nav navbar-brand-left'>
+	      <a routerLink="/">auto.market</a>
+	    </ul>
+	    <ul class='nav navbar-brand'>
+	      <button class="active" (click)="closeModal()">Home</button>
+	    	<button class="inactive" (click)="closeModal()">Sell Car</button>
+	    	<button class="inactive" (click)="closeModal()">Buy Car</button>
+	      <button class="inactive" (click)="closeModal()">Market</button>
+	      <button class="inactive" (click)="closeModal()">Contact Us</button>
+	    </ul>
+	    <ul class='nav navbar-brand'>
+	    	<button class="inactive"><img src="assets/icon/car-icon.svg"></button>
+	    	<button class="inactive"><img src="assets/icon/star.svg"></button>
+	    	<button class="button-icon"><img src="assets/icon/person.svg">Sign in</button>
+	      <button class="signup">Sign up</button>
+	    </ul>
+	  </div>
+	  <div class="nav-burger">
+      <label class="nav-burger__btn" (click)="burgerMenu()">
+        <span></span>
+      </label>
+    </div>
+	</nav>
+</div>

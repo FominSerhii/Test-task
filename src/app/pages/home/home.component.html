@@ -1,0 +1,353 @@
+<div class="home">
+	<p class="desc-main">Marketplace for buyers and sellers who love cars</p>
+	<h2 class="main-text">Find your next car here</h2>
+
+	<div class="card">
+	  <div class="container">
+	    <label for="place"><img src="assets/icon/geo-alt.svg"></label>
+		  <select name="place" id="map">
+		    <optgroup>
+		      <option value="toronto">Toronto (+100km)</option>
+		      <option value="">Other</option>
+		    </optgroup>
+		  </select>
+			  <label for="cars"><img src="assets/icon/car-icon.svg"></label>
+			  <select id="searchresults4" name="primarysport" required>
+			    <option value="" disabled selected>Brand and model</option>
+			    <option>Acura</option>
+			    <option>Alfa Romeo</option>
+			    <option>Aston Martin</option>
+			    <option>Audi</option>
+			    <option>Bentley</option>
+			    <option>BMW</option>
+			    <option>Other</option>
+				</select>
+				<label for="cars"><img src="assets/icon/wallet-fill.svg"></label>
+	      <input type="number" value="0" min="0">
+      	<button class="search">
+      		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+			 	 		<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+					</svg>
+				Search
+			</button>
+	  </div>
+	</div>
+
+	<div class="slide">
+		<p>Market status</p>
+		<div class="card">
+		  <img class="card-img" src="assets/images/m5.jpg" style="width:100%">
+		</div>
+		<div class="bottom-dot">
+		  <span class="dot-active"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		</div>
+	</div>
+
+	<h2 class="next">Continue your search</h2>
+	<p class="next-desc">All makes, +1 filter</p>
+	<carousel [cellsToShow]="6" [cellsToScroll]="1">
+    <div class="carousel-cell">
+    	<div class="card-carousel">
+    		<img src="assets/images/image082.png">
+    		<p class="km">85,000 km</p>
+    		<p class="price">$8 300</p>
+    	</div>
+    </div>
+    <div class="carousel-cell">
+      <div class="card-carousel">
+    		<img src="assets/images/image085.png">
+    		<p class="km">85,000 km</p>
+    		<p class="price">$8 300</p>
+    	</div>
+    </div>
+    <div class="carousel-cell">
+      <div class="card-carousel">
+    		<img src="assets/images/image086.png">
+    		<p class="km">85,000 km</p>
+    		<p class="price">$8 300</p>
+    	</div>
+    </div>
+    <div class="carousel-cell">
+      <div class="card-carousel">
+    		<img src="assets/images/image082.png">
+    		<p class="km">85,000 km</p>
+    		<p class="price">$8 300</p>
+    	</div>
+    </div>
+    <div class="carousel-cell">
+      <div class="card-carousel">
+    		<img src="assets/images/image087.png">
+    		<p class="km">85,000 km</p>
+    		<p class="price">$8 300</p>
+    	</div>
+    </div>
+    <div class="carousel-cell">
+      <div class="card-carousel">
+    		<img src="assets/images/image084.png">
+    		<p class="km">85,000 km</p>
+    		<p class="price">$8 300</p>
+    	</div>
+    </div>
+    <div class="carousel-cell">
+      <div class="card-carousel">
+    		<img src="assets/images/image084.png">
+    		<p class="km">85,000 km</p>
+    		<p class="price">$8 300</p>
+    	</div>
+    </div>
+	</carousel>
+
+	<div class="tabs">
+    <input type="radio" name="tab-btn" id="tab-btn-1" value="">
+    <label for="tab-btn-1">Most selling</label>
+    <input type="radio" name="tab-btn" id="tab-btn-2" value="" checked>
+    <label for="tab-btn-2">Best selling</label>
+    <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+    <label for="tab-btn-3">Most visited</label>
+
+    <div id="content-1">
+      <carousel [cellsToShow]="4" [cellsToScroll]="1"></carousel>
+    </div>
+    <div id="content-2">
+      <carousel [cellsToShow]="4" [cellsToScroll]="1" style="height: 300px;">
+		    <div class="carousel-cell">
+		    	<div class="card-carousel-best">
+		    		<img class="card-img" src="assets/images/image041.png">
+		    		<p class="year">2019</p>
+		    		<p class="name">BMW series 5</p>
+		    		<div class="hide">
+		    			<hr>
+		    			<p>4 651 offers</p>
+		    		</div>
+		    	</div>
+		    </div>
+		    <div class="carousel-cell">
+		      <div class="card-carousel-best">
+		    		<img class="card-img" src="assets/images/image043.png">
+		    		<p class="year">2018</p>
+		    		<p class="name">Chevrolett Express Cargo</p>
+		    		<div class="hide">
+		    			<hr>
+		    			<p>4 651 offers</p>
+		    		</div>
+		    	</div>
+		    </div>
+		    <div class="carousel-cell">
+		      <div class="card-carousel-best">
+		    		<img class="card-img" src="assets/images/image040.png">
+		    		<p class="year">2019</p>
+		    		<p class="name">Toyota Prius AWD</p>
+		    		<div class="hide">
+		    			<hr>
+		    			<p>4 651 offers</p>
+		    		</div>
+		    	</div>
+		    </div>
+		    <div class="carousel-cell">
+		      <div class="card-carousel-best">
+		    		<img class="card-img" src="assets/images/image060.png">
+		    		<p class="year">2019</p>
+		    		<p class="name">Ford Mustang</p>
+		    		<div class="hide">
+		    			<hr>
+		    			<p>4 651 offers</p>
+		    		</div>
+		    	</div>
+		    </div>
+		    <div class="carousel-cell">
+		      <div class="card-carousel-best">
+		    		<img class="card-img" src="assets/images/image046.png">
+		    		<p class="year">2019</p>
+		    		<p class="name">Ford F-150</p>
+		    		<div class="hide">
+		    			<hr>
+		    			<p>4 651 offers</p>
+		    		</div>
+		    	</div>
+		    </div>
+		    <div class="carousel-cell">
+		      <div class="card-carousel-best">
+		    		<img class="card-img" src="assets/images/image041.png">
+		    		<p class="year">2019</p>
+		    		<p class="name">BMW series 5</p>
+		    		<div class="hide">
+		    			<hr>
+		    			<p>4 651 offers</p>
+		    		</div>
+		    	</div>
+		    </div>
+			</carousel>
+    </div>
+    <div id="content-3">
+      <carousel [cellsToShow]="4" [cellsToScroll]="1"></carousel>
+    </div>
+  </div>
+
+  <div class="body-type">
+  	<div class="button-wrap">
+		  <h2 class="browse-by">Browse by body type</h2>
+		  <button class="all">Show all</button>
+	  </div>
+	  <div class="continer">
+  		<div class="row">
+			  <div class="col-md-2">
+			  	<div class="card-type">
+			  		<img class="type" src="assets/images/image074.png">
+			  		<p class="name-type">Sedan</p>
+			  	</div>
+			  </div>
+			  <div class="col-md-2">
+			  	<div class="card-type">
+			  		<img class="type" src="assets/images/image079.png">
+			  		<p class="name-type">Sedan</p>
+			  	</div>
+			  </div>
+			  <div class="col-md-2">
+			  	<div class="card-type">
+			  		<img class="type" src="assets/images/image077.png">
+			  		<p class="name-type">Sedan</p>
+			  	</div>
+			  </div>
+			  <div class="col-md-2">
+			  	<div class="card-type">
+			  		<img class="type" src="assets/images/image076.png">
+			  		<p class="name-type">Sedan</p>
+			  	</div>
+			  </div>
+			  <div class="col-md-2">
+			  	<div class="card-type">
+			  		<img class="type" src="assets/images/image075.png">
+			  		<p class="name-type">Sedan</p>
+			  	</div>
+			  </div>
+			  <div class="col-md-2">
+			  	<div class="card-type">
+			  		<img class="type" src="assets/images/image078.png">
+			  		<p class="name-type">Sedan</p>
+			  	</div>
+			  </div>
+	  	</div>
+	  </div>
+  </div>
+
+  <div class="popular">
+  	<div class="button-wrap">
+		  <h2 class="browse-by">Most popular in Canada</h2>
+		  <div class="all">
+		  	<label for="place"><img src="assets/icon/geo-alt.svg"></label>
+			  <select name="place" id="map">
+			    <optgroup>
+			      <option value="toronto">Toronto (+100km)</option>
+			      <option value="">Other</option>
+			    </optgroup>
+			  </select>
+		  </div>
+	  </div>
+	  <carousel [cellsToShow]="4" [cellsToScroll]="1" style="height: 360px;">
+	    <div class="carousel-cell">
+	    	<div class="card-carousel">
+	    		<img src="assets/images/image064.png">
+	    		<p class="year">2020</p>
+	    		<p class="name">Honda Civic Hatchback</p>
+	    		<div class="hide">
+	    			<hr>
+	    			<p>4 651 offers</p>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="carousel-cell">
+	      <div class="card-carousel">
+	    		<img src="assets/images/image060.png">
+	    		<p class="year">2020</p>
+	    		<p class="name">Ford Mustang GT</p>
+	    		<div class="hide">
+	    			<hr>
+	    			<p>4 651 offers</p>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="carousel-cell">
+	      <div class="card-carousel">
+	    		<img src="assets/images/image065.png">
+	    		<p class="year">2019</p>
+	    		<p class="name">Toyota RAV4 AWD</p>
+	    		<div class="hide">
+	    			<hr>
+	    			<p>4 651 offers</p>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="carousel-cell">
+	      <div class="card-carousel">
+	    		<img src="assets/images/image063.png">
+	    		<p class="year">2020</p>
+	    		<p class="name">Honda CR-V Hybrid</p>
+	    		<div class="hide">
+	    			<hr>
+	    			<p>4 651 offers</p>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="carousel-cell">
+	      <div class="card-carousel">
+	    		<img src="assets/images/image063.png">
+	    		<p class="year">2020</p>
+	    		<p class="name">Honda CR-V Hybrid</p>
+	    		<div class="hide">
+	    			<hr>
+	    			<p>4 651 offers</p>
+	    		</div>
+	    	</div>
+	    </div>
+		</carousel>
+	</div>
+
+	<div class="last">
+		<h2 class="popular-makes">Popular makes</h2>
+		<carousel [cellsToShow]="6" [cellsToScroll]="1">
+	    <div class="carousel-cell">
+	    	<div class="card-carousel">
+	    		<img class="makes" src="assets/images/image023.png">
+	    		<p class="mark">Peugeot</p>
+	    	</div>
+	    </div>
+	    <div class="carousel-cell">
+	      <div class="card-carousel">
+	    		<img class="makes" src="assets/images/image018.png">
+	    		<p class="mark">Volkswagen</p>
+	    	</div>
+	    </div>
+	    <div class="carousel-cell">
+	      <div class="card-carousel">
+	    		<img class="makes" src="assets/images/image019.png">
+	    		<p class="mark">Hyundai</p>
+	    	</div>
+	    </div>
+	    <div class="carousel-cell">
+	      <div class="card-carousel">
+	    		<img class="makes" src="assets/images/image021.png">
+	    		<p class="mark">Renault</p>
+	    	</div>
+	    </div>
+	    <div class="carousel-cell">
+	      <div class="card-carousel">
+	    		<img class="makes" src="assets/images/image020.png">
+	    		<p class="mark">Kia Motors</p>
+	    	</div>
+	    </div>
+	    <div class="carousel-cell">
+	      <div class="card-carousel">
+	    		<img class="makes" src="assets/images/image022.png">
+	    		<p class="mark">Toyota</p>
+	    	</div>
+	    </div>
+		</carousel>
+		<hr>
+	</div>
+
+
+
+</div>
