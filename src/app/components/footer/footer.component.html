@@ -9,9 +9,9 @@
 	  	</div>
 	  </div>
 	  <div class="footer-grid">
-	  	<p>Home</p>
-	  	<p>Sell car</p>
-	  	<p>Buy car</p>
+	  	<p>{{ 'Home' | translate }}</p>
+	  	<p>{{ 'Sell' | translate }}</p>
+	  	<p>{{ 'Buy' | translate }}</p>
 	  	<p>Dealers</p>
 	  </div>
 	  <div class="footer-grid">
@@ -29,10 +29,10 @@
 	  <div>
 	  	<img class="play_store" src="assets/images/image005.png">
 	  	<img class="play_store" src="assets/images/image004.png">
-	  	<select id="language" name="class_logo" required>
-			  <option value="english">🇨🇦&emsp;English</option>
-			  <option value="french">🇫🇷&emsp;French</option>
-			  <option value="arabic">🇩🇿&emsp;Arabic</option>
+	  	<select id="language" name="class_logo" required (change)="modo($event.target.value)">
+			  <option value="en">🇨🇦&emsp;English</option>
+			  <option value="fr">🇫🇷&emsp;French</option>
+			  <option value="ar">🇩🇿&emsp;Arabic</option>
 			</select>
 	  </div>
 	</div>

@@ -19,17 +19,17 @@
 	      <a routerLink="/">auto.market</a>
 	    </ul>
 	    <ul class='nav navbar-brand'>
-	      <button class="active" (click)="closeModal()">Home</button>
-	    	<button class="inactive" (click)="closeModal()">Sell Car</button>
-	    	<button class="inactive" (click)="closeModal()">Buy Car</button>
-	      <button class="inactive" (click)="closeModal()">Market</button>
-	      <button class="inactive" (click)="closeModal()">Contact Us</button>
+	      <button class="active" (click)="closeModal()">{{ 'Home' | translate }}</button>
+	    	<button class="inactive" (click)="closeModal()">{{ 'Sell' | translate }}</button>
+	    	<button class="inactive" (click)="closeModal()">{{ 'Buy' | translate }}</button>
+	      <button class="inactive" (click)="closeModal()">{{ 'Market' | translate }}</button>
+	      <button class="inactive" (click)="closeModal()">{{ 'Contact' | translate }}</button>
 	    </ul>
 	    <ul class='nav navbar-brand'>
 	    	<button class="inactive"><img src="assets/icon/car-icon.svg"></button>
 	    	<button class="inactive"><img src="assets/icon/star.svg"></button>
-	    	<button class="button-icon"><img src="assets/icon/person.svg">Sign in</button>
-	      <button class="signup">Sign up</button>
+	    	<button class="button-icon"><img src="assets/icon/person.svg">{{ 'Login' | translate }}</button>
+	      <button class="signup">{{ 'Reg' | translate }}</button>
 	    </ul>
 	  </div>
 	  <div class="nav-burger">
